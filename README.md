@@ -16,8 +16,7 @@ _N.B_: For DSSS, you should probably modify the GenDsssKeys.m function to includ
 
 **Our Scores**:
 
-
 | Branch ID    | AM             | DSBSC         | FM            | DSSS          | Average       |
 | :---         |     :---:      |     :---:     |   :---:       |     :---:     |     :---:     |
-| MASTER	   | X   	        | X  	        | X  	        | X  	        | X             |
+| MASTER	   | X   	        | 38000 	    | X  	        | X  	        | X             |
 
