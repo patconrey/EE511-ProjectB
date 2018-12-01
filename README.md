@@ -15,6 +15,9 @@ _N.B_: For DSSS, you should probably modify the GenDsssKeys.m function to includ
 **Scoring**: The team with the most bits without error in each part will receive full credit for that part. Bit rates below the maximum will receive points less than the 25% for each part of Project B. 
 
 **Our Scores**:
-| BRANCH ID  	    | AM        | DSBSC  	| FM     	| DSSS 	    | AVERAGE	|
-|---	            |---	    |---	    |---    	|---	    |---	    |
-| MASTER	        | X   	    | X  	    | X  	    | X  	    | X  	    |
+
+
+| Branch ID    | AM             | DSBSC         | FM            | DSSS          | Average       |
+| :---         |     :---:      |     :---:     |   :---:       |     :---:     |     :---:     |
+| MASTER	   | X   	        | X  	        | X  	        | X  	        | X             |
+
