@@ -38,13 +38,16 @@ k=k-N/2;
 plot(k,Sm);
 xlabel('DFT spectrum of Message Signal');
 print -djpeg Modulator_figure2
-
+% INSERT MODULATION EQUATION:
+% INSERT MODULATION EQUATION:
 % INSERT MODULATION EQUATION: Inputs sm vector, kc, t and N 
 % create AM modulation signal s
 t=0:(N-1);
-kc=N/16; % Maybe increase this??
-s= (1 + sm) .* cos(2 * pi * kc * t / N) / 2 ;
-
+kc=N/32;
+s=((1+sm).*(cos(2*pi*kc*(t/N))))/2;
+% END OF MODULATION INSERT
+% END OF MODULATION INSERT
+% END OF MODULATION INSERT
 % plot AM signal
 figure(3);
 if Nbit<41
