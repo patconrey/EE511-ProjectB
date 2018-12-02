@@ -28,5 +28,5 @@ To change the number of bits under test, edit `FTSIO_createBsize`.
 
 | Branch ID    | AM             | DSBSC         | FM            | DSSS          | Average       |
 | :---         |     :---:      |     :---:     |   :---:       |     :---:     |     :---:     |
-| MASTER	   | X   	        | 38000 	    | 30000  	    | 30000  	    | X             |
+| MASTER	   | X   	        | 38000 	    | 30000  	    | 30000  	    | 32666         |
 
