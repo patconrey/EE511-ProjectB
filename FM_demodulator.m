@@ -23,7 +23,7 @@ print -djpeg Demod_figure2
 S=fft(r);
 % create the phase discriminator bandpass filters
 t=0:(N-1);
-kdelta=N/64; % delta frequency
+kdelta=N/32; % delta frequency
 kc=N/16; % center frequency
 kc0=kc-kdelta; % frequency of a ONE
 kc1=kc+kdelta; % frequency of a ZERO

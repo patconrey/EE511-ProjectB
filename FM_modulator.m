@@ -44,7 +44,7 @@ print -djpeg Modulator_figure2
 % INSERT MODULATION EQUATION: Inputs sm vector, kc, t and N 
 % create FM modulation signal s
 t=0:(N-1);
-kdelta=N/64; % delta frequency
+kdelta=N/32; % delta frequency
 kc=N/16; % center frequency
 s= cos((2*pi*(kc + sm*kdelta).*t) / N);
 % END OF MODULATION INSERT
