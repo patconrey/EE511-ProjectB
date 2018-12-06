@@ -20,9 +20,9 @@ print -djpeg Demod_figure1
 % INSERT DEMODULATION CODE:
 % INSERT DEMODULATION CODE: input cutoff fc and r
 % rectify signal with single diode (half wave rectification)
-J = find(r < 0);
-r(J) = 0;
-r1 = r;
+% J = find(r < 0);
+% r(J) = 0;
+r1 = abs(r);
 % form reconstruction filter
 kc=N/32; % This should correspond to the channel parameter kc
 fc=kc;
