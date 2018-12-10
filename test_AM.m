@@ -5,5 +5,5 @@ FTSIO_createBsize;
 Bgen18;
 AM_modulator;
 channel18B;
-AM_demodulator;
+AM_demodulator_mixer;
 bitcheck18;
