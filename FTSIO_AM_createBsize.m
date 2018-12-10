@@ -2,7 +2,7 @@
 clear;
 % INSERT GROUP NAME AND NUMBER OF BITS
 groupname='FTSIO'; % name of group
-Nbit= 2^16 - 36; % number of bits to transmitt
+Nbit= 65500; % number of bits to transmitt
 % END OF INSERT
 % name of output file that stores Nbit and filename
 filename=sprintf('%s_Bsize.mat',groupname);
