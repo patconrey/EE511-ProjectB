@@ -2,10 +2,7 @@
 
 cleanup;
 numbits = 2^16;
-groupname = 'FTSIO';
-filename = sprintf('%s_numbits.mat',groupname);
-save(filename, 'numbits');
-FTSIO_createBsize;
+FTSIO_DSBSC_createBsize;
 Bgen18;
 DSBSC_modulator;
 channel18B;
