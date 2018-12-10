@@ -26,12 +26,14 @@ _N.B_: For DSSS, you should probably modify the GenDsssKeys.m function to includ
 
 To change the number of bits under test, edit `FTSIO_createBsize`.
 
+FM modulation test ??
+
 **Our Scores**:
 
 Test
 
 | Branch ID    | AM             | DSBSC         | FM            | DSSS          | Average       |
 | :---         |     :---:      |     :---:     |   :---:       |     :---:     |     :---:     |
-| MASTER	   | 8192   	    | 65536 	    | 30000  	    | 65536  	    | 32666         |
+| MASTER	   | 8192   	    | 65536 	    | 70784  	    | 65536  	    | 32666         |
 | _BASELINE_   | 512       	    | 4096   	    | 2048  	    | 8192  	    | 3712          |
 
