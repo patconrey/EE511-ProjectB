@@ -43,7 +43,7 @@ print -djpeg Modulator_figure2
 % INSERT MODULATION EQUATION: Inputs sm vector, kc, t and N 
 % create AM modulation signal s
 t=0:(N-1);
-kc= N / 26; %N/15;
+kc= N/15;
 s=( (1+sm) .* (cos(2*pi*kc*(t/N))));
 % END OF MODULATION INSERT
 % END OF MODULATION INSERT

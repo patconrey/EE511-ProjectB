@@ -25,7 +25,7 @@ end
 
 % We will multiply the received signal, r, by a local oscillator defined by
 % 2 * cos(2 * pi * f1 * t);
-f1 = N / 26; %N / 15;
+f1 = N / 15;
 t = 0 : (N - 1);
 local_oscillator = 2 * cos(2 * pi * f1 * (t / N));
 
