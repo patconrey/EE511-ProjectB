@@ -3,7 +3,7 @@ clear all;
 Nshowbits=10;
 load 'FTSIO_Bsize'; % get number of bits sizes
 load 'FTSIO_r';
-load 'FTSIO_Key.mat';
+load 'FTSIO_65536Key.mat';
 [M,N]=size(r)
 figure(2)
 Nsample=floor(N/Nbit)
