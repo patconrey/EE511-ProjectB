@@ -2,13 +2,13 @@
 clear all;
 % input active group
 load 'activegroup' groupname;
-groupname
+groupname;
 ifigstart=13;
 % input original size
 filename=sprintf('%s_Bsize.mat',groupname);
 load (filename) % retrieve matrix size
-filename
-Nbitb4=Nbit
+filename;
+Nbitb4=Nbit;
 % input original bit matrix
 filename=sprintf('%s_B.mat',groupname);
 load (filename);
@@ -20,11 +20,11 @@ filename=sprintf('%s_Bs.mat',groupname);
 load (filename);
 % check for consistancy
 [Nseqnow,N]=size(Bs);
-N
+N;
 if Nseqnow~=1
-    'ERROR:bitcheck matrices inconsistant'
+    'ERROR:bitcheck matrices inconsistant';
 else
-    'OK: bitcheck matrices consistant'
+    'OK: bitcheck matrices consistant';
 end;
 % plot
 k=1:N;
@@ -52,23 +52,23 @@ m=1;
             if Bs(m,n)>0.5
                 Btest(m,nb)=1;
             else
-                'ERROR, missing 1'
-               'Bcheck'
-               Bcheck(m,n)
-               'Bs'
-               Bs(m,n)
-               m
-               n
-               nb
+                'ERROR, missing 1';
+               'Bcheck';
+               Bcheck(m,n);
+               'Bs';
+               Bs(m,n);
+               m;
+               n;
+               nb;
                 if Nerror<10
 	                figure(2+1+Nerror+ifigstart);
    	             istart=floor(n-(2*N/Nbit));
       	          istop=floor(n+(2*N/Nbit));
          	       if istart<1
-            	       istart=1
+            	       istart=1;
                	 end;
    	             if istop>N
-      	             istop=N
+      	             istop=N;
          	       end;
                    clear x;
                    x=1:(1+istop-istart);
@@ -89,23 +89,23 @@ m=1;
             if Bs(m,n) < 0.5 % "0" is present demodulated/binarized signal
                 Btest(m,nb)=0;
             else
-               'ERROR, missing 0'
-               'Bcheck'
-               Bcheck(m,n)
-               'Bs'
-               Bs(m,n)
-               m
-               n
-               nb
+               'ERROR, missing 0';
+               'Bcheck';
+               Bcheck(m,n);
+               'Bs';
+               Bs(m,n);
+               m;
+               n;
+               nb;
                 if Nerror<10
 	                figure(2+1+Nerror+ifigstart);
    	             istart=floor(n-(2*N/Nbit));
       	          istop=floor(n+(2*N/Nbit));
          	       if istart<1
-            	       istart=1
+            	       istart=1;
                	 end;
    	             if istop>N
-      	             istop=N
+      	             istop=N;
          	       end;
                    clear x;
                    x=1:(1+istop-istart);
@@ -113,11 +113,11 @@ m=1;
                    bchecktemp=btemp;
                	 btemp(1:(1+istop-istart))=Bs(m,istart:istop);
                	 bchecktemp(1:(1+istop-istart))=Bcheck(m,istart:istop);
-                 istart
-                 istop
-                 size(x)
-                 size(btemp)
-                 size(bchecktemp)
+                 istart;
+                 istop;
+                 size(x);
+                 size(btemp);
+                 size(bchecktemp);
                	 plot(x,btemp-.5,x,bchecktemp);
                 end;
                 false=false+1;
@@ -127,16 +127,16 @@ m=1;
             nbreceived=nbreceived+1;
         end;
     end;
-nbsent=Nbit
-nbreceived
-miss
-false
+nbsent=Nbit;
+nbreceived;
+miss;
+false;
 Nerror
 if nbsent~=nbreceived
-    'Error between sent and recieved'
-    'Number of ones and zeros sent'
-    Nones=sum(sum(B))
-    Nzeros=nbsent-Nones
+    'Error between sent and recieved';
+    'Number of ones and zeros sent';
+    Nones=sum(sum(B));
+    Nzeros=nbsent-Nones;
 end;
 % STATISTICAL ANALYSIS OF BINARY SIGNAL
 Bit1index=find(Bcheck>0.5);
@@ -147,14 +147,14 @@ Bits1=zeros(1,NBit1);
 Bits0=zeros(1,NBit0);
 Bits1=Bs(Bit1index);
 Bits0=Bs(Bit0index);
-mu1=mean(Bits1,2)
-mu0=mean(Bits0,2)
+mu1=mean(Bits1,2);
+mu0=mean(Bits0,2);
 var1=var(Bits1);
 var0=var(Bits0);
-STD1=sqrt(var1)
-STD0=sqrt(var0)
-SQRTofSNR1=mu1/STD1
-SQRTofSNR0=mu0/STD0
+STD1=sqrt(var1);
+STD0=sqrt(var0);
+SQRTofSNR1=mu1/STD1;
+SQRTofSNR0=mu0/STD0;
 Discriminate=abs(mu1-mu0)/sqrt(var0+var1)
 % HISTOGRAM OF BITS
 W=100;
