@@ -30,8 +30,10 @@ FM modulation test ??
 
 **Our Scores**:
 
+Test
+
 | Branch ID    | AM             | DSBSC         | FM            | DSSS          | Average       |
 | :---         |     :---:      |     :---:     |   :---:       |     :---:     |     :---:     |
-| MASTER	   | 8192   	    | 38000 	    | 70784  	    | 30000  	    | 32666         |
+| MASTER	   | 8192   	    | 65536 	    | 70784  	    | 65536  	    | 32666         |
 | _BASELINE_   | 512       	    | 4096   	    | 2048  	    | 8192  	    | 3712          |
 
