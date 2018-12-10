@@ -1,6 +1,6 @@
 % generate orthogonalized signal keys for DSSS based on groupname_Bsize.mat
 clear all;
-Nkeys=2;
+Nkeys=8;
 groupname='FTSIO' % instructor enters this name to select student project
 filename=sprintf('%s_Bsize.mat',groupname);
 load (filename) % retrieve data

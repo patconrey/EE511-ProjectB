@@ -39,6 +39,7 @@ sm0=sm0.*r;
 sm1=sm1.*r;
 % convolve with moving average rectangle
 h=irect(1,Nsample,1,N);
+%h = hanning(Nsample);
 H=fft(h);
 Sm0=fft(sm0);
 Sm1=fft(sm1);

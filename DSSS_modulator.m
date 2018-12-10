@@ -3,7 +3,7 @@ clear;
 Nshowbits=4;
 load 'FTSIO_B.mat';
 load 'FTSIO_Bsize.mat';
-load 'FTSIO_Key.mat';
+load 'FTSIO_65536Key.mat';
 % generate a real vector s, N=131072*8 or let N be less for debug process
 N=131072*8 % N is set by instructor and cannot be changed
 % CREATE THE MESSAGE SIGNAL
