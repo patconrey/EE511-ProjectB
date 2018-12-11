@@ -26,7 +26,7 @@ end
 
 % We will multiply the received signal, r, by a local oscillator defined by
 % 2 * cos(2 * pi * f1 * t);
-f1 = N / 16; % N / 4;
+f1 = N / 6; % N / 4;
 t = 0 : (N - 1);
 
 local_oscillator = 2 * cos(2 * pi * f1 * (t / N));
@@ -74,7 +74,7 @@ end
 signal = signal;
 dum = (signal + abs(min(signal)));
 dum1 = dum / max(dum);
-%Bs = sigmoid(dum1, .52, 20);
-Bs = dum1;
+Bs = sigmoid(dum1, .5, 20);
+%Bs = dum1;
 
 save 'FTSIO_Bs' Bs;
