@@ -26,7 +26,7 @@ end
 
 % We will multiply the received signal, r, by a local oscillator defined by
 % 2 * cos(2 * pi * f1 * t);
-f1 = N / 32; % N / 4;
+f1 = N / 16; % N / 4;
 t = 0 : (N - 1);
 
 local_oscillator = 2 * cos(2 * pi * f1 * (t / N));
@@ -39,7 +39,7 @@ E = fft(e);
 fo = round(N/9); % The center frequency of the filter
 fc = 4.367e4; %90000; % The cutoff of the filter
 K = 1;
-Norder = 100;
+Norder = 26;
 [f, H] = lp_butterworth_oN_dft15(fc, K, N, Norder);
 SIG = H .* E;
 signal = ifft(SIG);

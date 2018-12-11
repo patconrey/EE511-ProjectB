@@ -45,7 +45,7 @@ print -djpeg Modulator_figure2
 
 
 t=0:(N-1);
-kc= N / 32; %N/4;
+kc= N / 16; %N/4;
 s=( (1+sm) .* (cos(2*pi*kc*(t/N)))) / 2;
 
 
